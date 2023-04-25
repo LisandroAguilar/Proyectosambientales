@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Donaciones</title>
+</head>
+<body>
+    <header>
+        <div id="titulo">
+            <img src="img/logo_Pet.jpg" alt="mi logo" id="logo">
+            <h1>Donaciones para GuauMiau</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="capacitacion.html">Capacitación</a></li>
+                <li><a href="#">Donaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.php">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <p>Por favor, complete el formulario a continuación para realizar su donación.</p>
+    </article>
+    <form method="POST" action="pago.php">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+    
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+    
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" required><br><br>
+    
+        <label for="tarjeta">Tarjeta de crédito:</label>
+        <input type="text" id="tarjeta" name="tarjeta" required><br><br>
+    
+        <input type="submit" value="Donar">
+    </form>
+    
+    <footer>
+        <div>
+            <p>Boulevard Belisario Domínguez Km 1081, sn, Terán, Tuxtla Gutíerrez, Chiapas, México</p>
+            <p>&copy; GuauMiau Derechos reservados 2023</p>
+        </div>
+    </footer>
+</body>
+</html>
